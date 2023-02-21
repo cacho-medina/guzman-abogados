@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(19, 117, 216, 0.919);
+}
+.main__section,
+.contact {
+    height: 100vh;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15%;
+}
+.contact__us {
+    color: #fff;
+    border-left: 1px solid #fff;
+    padding: 10px 50px 10px 5px;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+.contact__us:hover {
+    cursor: pointer;
+}
+
+.main__logo {
+    width: 100%;
+    position: relative;
+    top: -20%;
+    left: 0px;
+    z-index: 0;
+}
+
+.contact {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "cabeza cabeza cabeza"
+        "phone adress email";
+    color: #fff;
+    text-align: center;
+}
+.contact__title {
+    grid-area: cabeza;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contact__phone {
+    grid-area: phone;
+}
+.contact__phone img {
+    width: 100px;
+}
+.contact__adress {
+    grid-area: adress;
+}
+.contact__email {
+    grid-area: email;
+}
+.phone__title,
+.adress__title,
+.email__adress {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
