@@ -15,11 +15,10 @@
     scroll-behavior: smooth;
 }
 body {
-    background-color: rgba(19, 117, 216, 0.919);
+    background-color: #276b97;
 }
 .main__section,
-.contact,
-.map {
+.contact {
     height: 100vh;
 }
 .nav {
@@ -27,6 +26,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 15%;
+    background-image: linear-gradient(0, #276b97 0, #1b4d6d 50%, #00356d 100%);
 }
 .contact__us {
     color: var(--white-color);
@@ -40,7 +40,6 @@ body {
 .contact__us:hover {
     color: #fff;
     border-left: 1px solid #fff;
-    transform: scale(1.05);
 }
 
 .main__logo {
@@ -61,6 +60,12 @@ body {
         "phone adress email";
     color: #fff;
     text-align: center;
+    background-image: linear-gradient(
+        180deg,
+        #276b97 0,
+        #1b4d6d 50%,
+        #00356d 100%
+    );
 }
 .contact__title {
     grid-area: cabeza;
@@ -86,12 +91,57 @@ body {
     font-size: 2rem;
     font-weight: 400;
 }
+.logos {
+    width: 50px;
+}
+.logos__adress {
+    width: 70px;
+}
 .info {
     font-size: 1.2rem;
 }
+.map {
+    height: 80vh;
+    background-image: linear-gradient(
+        180deg,
+        #00356d 0,
+        #0f2c3d 50%,
+        #081822 100%
+    );
+    padding-top: 100px;
+}
 .mapa {
-    border: 1px solid black;
     width: 60%;
-    height: 60%;
+    height: 80%;
     margin: auto;
+}
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--white-color);
+    background-image: linear-gradient(
+        180deg,
+        #081822 0,
+        #061219 50%,
+        #000000 100%
+    );
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: linear-gradient(
+        180deg,
+        #276b97 0,
+        #00356d 30%,
+        #0f2c3d 50%,
+        #081822 75%,
+        #000000 100%
+    );
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white-color);
+    border-radius: 20px;
 }
